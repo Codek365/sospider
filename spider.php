@@ -1,12 +1,12 @@
 <?php
 $url = 'https://raw.githubusercontent.com/Codek365/sobii-single/master/sobii.php';
-
+$token = 'b17bb55fa4936e686c94df957f8e45a1d62ab0e1';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 $headers = array();
-$headers[] = 'Authorization: token 1abd7b9e6d6badd7f08b05d03bb0f89c4cb6dd31';
+$headers[] = 'Authorization: token ' . $token;
 $headers[] = 'Accept: application/vnd.github.v3.raw';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
