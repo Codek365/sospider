@@ -6,7 +6,7 @@ curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 $headers = array();
-$headers[] = 'Authorization: token d544ac0dfac5a15e7d4a8bb3b5e06affc735b33b';
+$headers[] = 'Authorization: token 1abd7b9e6d6badd7f08b05d03bb0f89c4cb6dd31';
 $headers[] = 'Accept: application/vnd.github.v3.raw';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
